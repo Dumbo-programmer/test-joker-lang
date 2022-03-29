@@ -1,0 +1,53 @@
+{
+  "name": "jokerlang",
+  "version": "0.1.0",
+  "description": "CLI for joker-lang",
+  "source": "src/index.ts",
+  "main": "bin/index.js",
+  "bin": {
+    "jokerlang": "./bin/index.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "dev": "node --loader ts-node/esm",
+    "build": "tsup src/* --dts --outDir bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DulLabs/joker-lang.git"
+  },
+  "keywords": [
+    "programming",
+    "language",
+    "joker-lang",
+    "bl",
+    "javascript",
+    "typescript"
+  ],
+  "contributors": [
+    {
+      "name": "Dumbo-programmer",
+      "url": "https://github.com/Dumbo-programmer"
+    }
+
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DulLabs/joker-lang/issues"
+  },
+  "homepage": "https://github.com/DulLabs/joker-lang#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "ts-jest": "^27.1.2",
+    "tsup": "^5.11.11",
+    "jest": "^27.4.5",
+    "yargs": "^17.3.1",
+    "chalk": "^5.0.0",
+    "@types/jest": "^27.4.0",
+    "config": "*",
+    "tsconfig": "*",
+    "joker-lang-interpreter": "*"
+  }
+}
